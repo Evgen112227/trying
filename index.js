@@ -1,14 +1,18 @@
-function Dog(breed, someShit) {
-    this.breed = breed;
-    this.someShit = someShit;
-}
+const numberOfFilms = +prompt('How many films yve seen?', 0);
 
-function Ha(mat, e) {
-    this.mat = mat;
-    this.e = e;
-}
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-let something = new Ha('plastic', 'eeeee');
-console.log(something);
+const a = prompt('One of the latest films', '');
+const b = prompt('Оценка', '');
+const c = prompt('One of the latest films', '');
+const d = prompt('Оценка', '');
 
-console.log(something instanceof Ha);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
